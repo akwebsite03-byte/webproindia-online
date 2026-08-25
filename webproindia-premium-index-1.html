@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WebPro India creates professional, modern and mobile-friendly websites for businesses.">
+<title>WebPro India | Professional Business Websites</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;color:#151515;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #eee}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:-.8px}.logo span{font-weight:400}
+.links{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:#5b35e7;color:#fff;padding:13px 20px;border-radius:11px;font-weight:800;border:0}
+.btn.light{background:#fff;color:#151515}.btn.outline{background:transparent;color:#5b35e7;border:1px solid #d9d0ff}
+.hero{padding:95px 0 80px;background:radial-gradient(circle at 85% 20%,#e8e1ff 0,transparent 32%),linear-gradient(135deg,#f7f5ff,#fff 65%)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#ebe5ff;color:#4f2fc9;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.7px;margin-bottom:20px}
+h1{font-size:clamp(44px,6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin-bottom:22px}
+h1 span{color:#5b35e7}.hero p{font-size:19px;color:#5e5e5e;max-width:650px;margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-panel{background:#151515;color:#fff;border-radius:26px;padding:34px;min-height:360px;box-shadow:0 25px 70px rgba(0,0,0,.14);position:relative;overflow:hidden}
+.hero-panel:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#5b35e7;right:-65px;bottom:-65px}
+.hero-panel small{color:#bdaeff;font-weight:900;letter-spacing:1.5px}.hero-panel h2{font-size:34px;line-height:1.15;margin:18px 0}.hero-panel p{font-size:16px;color:#d4d4d4;max-width:430px}.stat{display:flex;gap:28px;margin-top:35px}.stat strong{display:block;font-size:25px}.stat span{color:#aaa;font-size:12px}
+section{padding:78px 0}.section-title{text-align:center;max-width:720px;margin:0 auto 44px}.section-title h2{font-size:39px;letter-spacing:-1px;margin-bottom:10px}.section-title p{color:#686868}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid #e8e8e8;border-radius:20px;padding:28px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.04);transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.icon{width:50px;height:50px;border-radius:14px;background:#eee8ff;color:#5b35e7;display:grid;place-items:center;font-weight:900}.card h3{font-size:21px;margin:15px 0 8px}.card p{color:#666;font-size:15px}
+.pricing .card{position:relative}.price{font-size:32px;font-weight:900;margin:16px 0}.price small{font-size:13px;color:#777;font-weight:500}.features{list-style:none;color:#555;font-size:14px;margin:18px 0 24px}.features li{margin:8px 0}.featured{border:2px solid #5b35e7;box-shadow:0 18px 50px rgba(91,53,231,.14)}.tag{position:absolute;right:18px;top:18px;background:#5b35e7;color:#fff;border-radius:999px;padding:5px 9px;font-size:10px;font-weight:900}
+.portfolio{background:#f7f7f8}.demo{background:#171717;color:#fff;border-radius:20px;min-height:210px;padding:26px;display:flex;flex-direction:column;justify-content:flex-end}.demo span{color:#bdaeff;font-size:12px;font-weight:900}.demo h3{font-size:25px;margin-top:8px}.demo p{color:#bbb;font-size:14px}
+.cta{background:#171717;color:#fff;border-radius:28px;padding:58px;text-align:center}.cta h2{font-size:40px}.cta p{color:#cfcfcf;max-width:650px;margin:12px auto 25px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-box{background:#f7f7f7;border-radius:20px;padding:30px}.contact-box p{margin:10px 0;color:#555}.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+footer{background:#111;color:#aaa;text-align:center;padding:30px 0;font-size:14px}.mobile-menu{display:none}
+@media(max-width:780px){
+.links{display:none}.mobile-menu{display:block;font-size:26px}.hero{padding:65px 0}.hero-grid,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero-panel{min-height:290px}section{padding:60px 0}.section-title h2,.cta h2{font-size:31px}.cta{padding:40px 22px}h1{letter-spacing:-1.5px}.stat{gap:20px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#">WebPro<span> India</span></a>
+<div class="links"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a><a class="btn" href="#contact">Get Started</a></div>
+<div class="mobile-menu">☰</div>
+</nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="badge">WEB DESIGN • DIGITAL PRESENCE • BUSINESS GROWTH</div>
+<h1>Your business deserves a <span>better website.</span></h1>
+<p>WebPro India creates modern, fast and mobile-friendly websites that help local and small businesses look professional and get more enquiries online.</p>
+<div class="actions"><a class="btn" href="#contact">🚀 Get Your Website</a><a class="btn outline" href="https://wa.me/917755033728" target="_blank">💬 WhatsApp Us</a></div>
+</div>
+<div class="hero-panel">
+<small>WEBPRO INDIA</small>
+<h2>Turn your online presence into your next customer.</h2>
+<p>Clean design. Clear messaging. Easy contact. Built for businesses that are ready to grow.</p>
+<div class="stat"><div><strong>100%</strong><span>Mobile Friendly</span></div><div><strong>Fast</strong><span>Modern Experience</span></div><div><strong>24/7</strong><span>Online Presence</span></div></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="section-title"><h2>What We Build</h2><p>Professional website solutions designed around your business.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">01</div><h3>Business Websites</h3><p>Professional websites for shops, services, professionals and local businesses.</p></div>
+<div class="card"><div class="icon">02</div><h3>Landing Pages</h3><p>Focused pages for promotions, services, campaigns and lead generation.</p></div>
+<div class="card"><div class="icon">03</div><h3>Online Shops</h3><p>Product-focused e-commerce experiences for businesses ready to sell online.</p></div>
+</div></div></section>
+
+<section id="pricing" class="pricing"><div class="wrap">
+<div class="section-title"><h2>Simple Packages</h2><p>Choose a starting point and upgrade as your business grows.</p></div>
+<div class="grid">
+<div class="card"><h3>Basic</h3><div class="price">₹3,999 <small>/ starting</small></div><ul class="features"><li>✓ Professional business website</li><li>✓ Mobile responsive design</li><li>✓ Contact & WhatsApp</li><li>✓ Basic SEO setup</li></ul><a class="btn outline" href="#contact">Enquire Now</a></div>
+<div class="card featured"><div class="tag">POPULAR</div><h3>Professional</h3><div class="price">₹7,999 <small>/ starting</small></div><ul class="features"><li>✓ Premium multi-section design</li><li>✓ Services & portfolio</li><li>✓ WhatsApp + contact buttons</li><li>✓ Basic SEO & performance</li></ul><a class="btn" href="#contact">Get Started</a></div>
+<div class="card"><h3>Custom</h3><div class="price">Let's Talk</div><ul class="features"><li>✓ Custom requirements</li><li>✓ E-commerce options</li><li>✓ Booking / enquiry features</li><li>✓ Tailored business solution</li></ul><a class="btn outline" href="#contact">Discuss Project</a></div>
+</div></div></section>
+
+<section id="portfolio" class="portfolio"><div class="wrap">
+<div class="section-title"><h2>Demo Portfolio</h2><p>Examples of the kind of websites WebPro India can create for local businesses.</p></div>
+<div class="grid">
+<div class="demo"><span>DEMO • RESTAURANT</span><h3>Food & Restaurant Website</h3><p>Menu, gallery, location and WhatsApp enquiries.</p></div>
+<div class="demo"><span>DEMO • SALON</span><h3>Salon & Beauty Website</h3><p>Services, pricing, gallery and appointment enquiry.</p></div>
+<div class="demo"><span>DEMO • PROFESSIONAL</span><h3>Service Business Website</h3><p>Services, trust-building content and lead generation.</p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="cta">
+<h2>Ready to take your business online?</h2><p>Let's create a website that makes your business look professional and makes it easy for customers to contact you.</p>
+<a class="btn" href="#contact">Start Your Project</a>
+</div></div></section>
+
+<section id="contact"><div class="wrap">
+<div class="section-title"><h2>Let's Talk</h2><p>Have a business and need a website? Contact WebPro India today.</p></div>
+<div class="contact">
+<div class="contact-box"><h3>WebPro India</h3><p><strong>Website:</strong> webproindia.online</p><p><strong>Phone:</strong> 7755033728</p><p><strong>Email:</strong> akwebsite03@gmail.com</p><div class="contact-actions"><a class="btn" href="tel:+917755033728">📞 Call Now</a><a class="btn" href="https://wa.me/917755033728" target="_blank">💬 WhatsApp</a><a class="btn outline" href="mailto:akwebsite03@gmail.com">✉️ Email</a></div></div>
+<div class="contact-box"><h3>Why choose WebPro India?</h3><p>✓ Modern and professional design</p><p>✓ Mobile-friendly experience</p><p>✓ Clear pricing and services</p><p>✓ Direct WhatsApp and contact options</p></div>
+</div></div></section>
+</main>
+<footer>© 2026 WebPro India. All rights reserved. • webproindia.online</footer>
+</body>
+</html>
